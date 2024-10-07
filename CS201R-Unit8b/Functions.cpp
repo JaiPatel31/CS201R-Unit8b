@@ -33,7 +33,7 @@ int readFile(vector<Person>& people) {
         // push the object onto the stack
         try {
             if (row[0] == "P") {
-                Person tempPerson(row[1], row[2], stoi(row[3]));
+                Person tempPerson(row[0][0], row[1], row[2], stoi(row[3]));
                 people.push_back(tempPerson);
             }
             //test to create a student & push onto the students vector

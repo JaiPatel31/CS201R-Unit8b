@@ -6,7 +6,7 @@ using namespace std;
 
 //UPDATE: Person so fields can be used by derived class Student
 class Person {
-private:
+protected:
 	char type;
 	string lname;
 	string fname;
@@ -14,7 +14,7 @@ private:
 
 public:
 	Person();                            //constructor: default
-	Person(string l, string f, int a);   //constructor: overloaded
+	Person(char y, string l, string f, int a);   //constructor: overloaded
 
 	char   getType() { return type; }    //accessor (type)
 	int    getAge() { return age; }      //accessor (age)

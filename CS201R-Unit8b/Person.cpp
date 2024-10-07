@@ -8,8 +8,8 @@ Person::Person() {
 	Person::totalPerson++;
 }
 
-Person::Person(string l, string f, int a) {
-	type = 'P';
+Person::Person(char t,string l, string f, int a) {
+	type = t;
 	lname = l;
 	fname = f;
 	age = a;

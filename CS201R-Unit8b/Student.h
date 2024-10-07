@@ -2,7 +2,7 @@
 #include "Person.h"
 
 //UPDATE: make student a derived class of person class
-class Student {
+class Student:Person{
 private:
 	float gpa;
 
@@ -11,9 +11,11 @@ public:
 	Student();
 
 	//constructor: overloaded - create 
-	Student(string l, string f, int a, float g);
+	Student(char t, string l, string f, int a, float g);
 
 	//ADD accessor & mutator for gpa
+	float getGPA() { return gpa; }
+	void setGPA(float g) { gpa = g; }
 
 	void print();
 	static int totalStudent;
